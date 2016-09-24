@@ -1,0 +1,66 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>D3 | Hackathon</title>
+
+		<style>
+			#d3-map {
+			    background-color: #143459;
+			    margin-top: -1px;
+			    position: absolute;
+			    top: 50%;
+			    left: 50%;
+			    min-width: 100%;
+			    min-height: 100%;
+			    width: auto;
+			    height: auto;
+			    z-index: -100;
+			    -webkit-transform: translateX(-50%) translateY(-50%);
+			    transform: translateX(-50%) translateY(-50%);
+			    background-size: cover;
+			}
+
+			.counties {
+			    fill: none;
+			}
+
+			.states {
+			    fill: none;
+			    stroke: #fff;
+			    stroke-linejoin: round;
+			}
+
+			.q0-9 { fill:rgb(247,251,255); }
+			.q1-9 { fill:rgb(222,235,247); }
+			.q2-9 { fill:rgb(198,219,239); }
+			.q3-9 { fill:rgb(158,202,225); }
+			.q4-9 { fill:rgb(107,174,214); }
+			.q5-9 { fill:rgb(66,146,198); }
+			.q6-9 { fill:rgb(33,113,181); }
+			.q7-9 { fill:rgb(8,81,156); }
+			.q8-9 { fill:rgb(8,48,107); }
+
+			.arc {
+			    opacity:0.6;
+			    stroke: #ff8a00;
+			    stroke-width: 4;
+			    stroke-linejoin: round;
+			    fill:none;
+			}
+		</style>
+  	</head>
+
+  	<body>
+  		<div id="d3-map">
+		  	<!-- This is where the d3 map goes -->
+		</div>
+		
+		<script src="files/lib/d3.v3.min.js"></script>
+		<script src="files/lib/queue.v1.min.js"></script>
+		<script src="files/lib/topojson.v1.min.js"></script>
+		<script src="files/application.js"></script>
+  	</body>
+</html>
